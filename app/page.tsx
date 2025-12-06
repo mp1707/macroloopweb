@@ -6,12 +6,34 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { translations, Language } from "@/lib/translations";
 import { LanguageToggle } from "@/components/language-toggle";
-import { Check } from "lucide-react";
+import {
+  Camera,
+  Mic,
+  Brain,
+  Search,
+  SlidersHorizontal,
+  Scale,
+  ChartNoAxesColumnDecreasing,
+  Star,
+  Pencil,
+} from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Home() {
   const { lang, setLanguage, mounted } = useLanguage();
   const t = translations[lang];
+
+  const iconMap = {
+    Camera,
+    Mic,
+    Brain,
+    Search,
+    SlidersHorizontal,
+    Scale,
+    ChartNoAxesColumnDecreasing,
+    Star,
+    Pencil,
+  };
 
   // Prevent hydration mismatch by rendering nothing or a shell until mounted
   // However, for SEO on the main page, we might want to default to 'en' content on server
@@ -129,32 +151,50 @@ export default function Home() {
 
         {/* Features List Section */}
         <section className="py-16 lg:py-24 px-6">
-          <div className="max-w-3xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+          <div className="max-w-6xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 sm:grid-cols-1"
+              className="text-3xl md:text-4xl font-bold text-center mb-16 tracking-tight"
             >
-              {t.features.map((feature, index) => (
+              {t.featureSection.title}
+            </motion.h2>
+
+            <div className="grid gap-12 md:grid-cols-3">
+              {t.featureSection.groups.map((group, groupIdx) => (
                 <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  key={groupIdx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  className="flex items-start gap-4"
+                  transition={{ delay: groupIdx * 0.1 }}
+                  className="space-y-8"
                 >
-                  <div className="mt-1 p-1 rounded-full bg-primary/10 text-primary shrink-0">
-                    <Check size={20} strokeWidth={3} />
+                  <h3 className="text-xl font-semibold text-primary border-b border-primary/20 pb-2 mb-6">
+                    {group.title}
+                  </h3>
+                  <div className="space-y-6">
+                    {group.items.map((item, itemIdx) => {
+                      const Icon = iconMap[item.icon as keyof typeof iconMap];
+                      return (
+                        <div key={itemIdx} className="flex items-center gap-4">
+                          <div className="shrink-0 p-2 rounded-xl bg-secondary/50 text-primary">
+                            {Icon && <Icon size={24} strokeWidth={2} />}
+                          </div>
+                          <div>
+                            <p className="text-lg font-medium leading-snug">
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                  <span className="text-lg sm:text-xl font-medium text-secondary-text">
-                    {feature}
-                  </span>
                 </motion.div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </section>
 

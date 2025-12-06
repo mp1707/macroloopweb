@@ -6,17 +6,35 @@ export const translations = {
         "Built for athletes who know what they’re doing. No meal plans. No coaching. Just lightning-fast logging.",
       cta: "Download on the App Store",
     },
-    features: [
-      "AI-powered logging. No database digging.",
-      "Snap a photo. Done.",
-      "Log with your voice.",
-      "Easily adjust portion sizes.",
-      "Precise ingredient breakdown.",
-      "Fine-tune ingredients and recalculate.",
-      "Add hidden ingredients manually.",
-      "Save and reuse favorite meals.",
-      "Visualize progress with Trends.",
-    ],
+    featureSection: {
+      title: "Spend Less Time Logging, More Time Living.",
+      groups: [
+        {
+          title: "Effortless Logging",
+          items: [
+            { icon: "Camera", text: "Snap a photo. Done." },
+            { icon: "Mic", text: "Log with your voice." },
+            { icon: "Brain", text: "AI-powered logging. No database digging." },
+          ],
+        },
+        {
+          title: "Precision Tracking",
+          items: [
+            { icon: "Search", text: "Precise ingredient breakdown." },
+            { icon: "SlidersHorizontal", text: "Fine-tune ingredients and recalculate." },
+            { icon: "Scale", text: "Easily adjust portion sizes." },
+          ],
+        },
+        {
+          title: "Progress & Recall",
+          items: [
+            { icon: "ChartNoAxesColumnDecreasing", text: "Visualize progress with Trends." },
+            { icon: "Star", text: "Save and reuse favorite meals." },
+            { icon: "Pencil", text: "Add hidden ingredients manually." },
+          ],
+        },
+      ],
+    },
     footer: {
       headline: "Ready to cut the fluff?",
       cta: "Download on the App Store",
@@ -35,17 +53,35 @@ export const translations = {
         "Für Athleten, die wissen, was sie tun. Keine Ernährungspläne. Kein Coaching. Einfach blitzschnelles Tracking.",
       cta: "Im App Store laden",
     },
-    features: [
-      "AI-Tracking statt Datenbank-Suche.",
-      "Foto machen. Fertig.",
-      "Loggen per Sprachbefehl.",
-      "Portionsgrößen einfach anpassen.",
-      "Präzise Zutaten-Aufschlüsselung.",
-      "Zutaten bearbeiten und neu berechnen.",
-      "Versteckte Zutaten manuell ergänzen.",
-      "Mahlzeiten als Favoriten speichern.",
-      "Fortschritt visualisieren mit Trends.",
-    ],
+    featureSection: {
+      title: "Weniger Zeit fürs Loggen, mehr Zeit fürs Leben.",
+      groups: [
+        {
+          title: "Müheloses Loggen",
+          items: [
+            { icon: "Camera", text: "Foto machen. Fertig." },
+            { icon: "Mic", text: "Loggen mit der Stimme." },
+            { icon: "Brain", text: "KI-basiertes Loggen. Keine Datenbank-Suche." },
+          ],
+        },
+        {
+          title: "Präzises Tracking",
+          items: [
+            { icon: "Search", text: "Präzise Zutaten-Aufschlüsselung." },
+            { icon: "SlidersHorizontal", text: "Zutaten anpassen und neu berechnen." },
+            { icon: "Scale", text: "Portionsgrößen einfach anpassen." },
+          ],
+        },
+        {
+          title: "Fortschritt & Erinnerung",
+          items: [
+            { icon: "ChartNoAxesColumnDecreasing", text: "Fortschritt mit Trends visualisieren." },
+            { icon: "Star", text: "Lieblingsmahlzeiten speichern und wiederverwenden." },
+            { icon: "Pencil", text: "Versteckte Zutaten manuell ergänzen." },
+          ],
+        },
+      ],
+    },
     footer: {
       headline: "Bereit dich auf das Wesentliche zu fokussieren?",
       cta: "Im App Store laden",
