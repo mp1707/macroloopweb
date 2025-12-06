@@ -16,6 +16,9 @@ import {
   ChartNoAxesColumnDecreasing,
   Star,
   Pencil,
+  Zap,
+  Lock,
+  CheckCircle2
 } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
@@ -35,20 +38,61 @@ export default function Home() {
     Pencil,
   };
 
-  // Prevent hydration mismatch by rendering nothing or a shell until mounted
-  // However, for SEO on the main page, we might want to default to 'en' content on server
-  // and then switch on client. The useLanguage hook initializes 'en'.
-  // But if we return null, we hurt SEO.
-  // Better: Render with 'lang' (which is 'en' initially) and let the hook update it.
-  // The hook does: const [lang, setLang] = useState<Language>("en");
-  // So initial render is EN. Then useEffect checks localStorage/Navigator and updates.
-  // This is fine for SEO (Google gets EN).
-
   const appStoreUrl =
     "https://apps.apple.com/de/app/macroloop-ki-kalorienz%C3%A4hler/id6754224603";
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground">
+       {/* Schema.org Structured Data */}
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            name: "MacroLoop",
+            operatingSystem: "iOS",
+            applicationCategory: "Health & Fitness",
+            description:
+              "MacroLoop is an AI-powered calorie and macro tracker for iOS. Log meals via photo, text, or voice and get fast, exact-enough nutrition estimates.",
+            image: "https://getmacroloop.app/assets/ios-dark.png",
+            url: "https://getmacroloop.app",
+            softwareVersion: "1.0.0",
+            inLanguage: ["en", "de"],
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Marco Preuss",
+              url: "https://getmacroloop.app",
+            },
+            downloadUrl: appStoreUrl,
+            installUrl: appStoreUrl,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: t.faq?.items.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })) || [],
+          }),
+        }}
+      />
+
       {/* Floating Language Toggle */}
       <LanguageToggle currentLang={lang} onToggle={setLanguage} />
 
@@ -64,7 +108,7 @@ export default function Home() {
             >
               <Image
                 src="/assets/ios-dark.png"
-                alt="MacroLoop App Icon"
+                alt="MacroLoop iOS App Icon"
                 width={120}
                 height={120}
                 className="mx-auto rounded-3xl shadow-lg"
@@ -138,7 +182,7 @@ export default function Home() {
                 >
                   <Image
                     src={src}
-                    alt={`App screenshot ${idx + 1}`}
+                    alt={`MacroLoop iOS App Screenshot ${idx + 1}`}
                     fill
                     className="object-contain drop-shadow-2xl"
                     sizes="(max-width: 768px) 85vw, 300px"
@@ -149,8 +193,82 @@ export default function Home() {
           </div>
         </section>
 
+        {/* What Is MacroLoop Section */}
+        {t.whatIs && (
+          <section className="py-12 lg:py-24 px-6 bg-secondary/20">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl font-bold tracking-tight"
+              >
+                {t.whatIs.title}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="text-lg text-secondary-text leading-relaxed"
+              >
+                {t.whatIs.description}
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="text-base text-primary font-medium"
+              >
+                {t.whatIs.audience}
+              </motion.p>
+            </div>
+          </section>
+        )}
+
+        {/* Comparison Section */}
+        {t.comparison && (
+          <section className="py-16 lg:py-24 px-6">
+            <div className="max-w-5xl mx-auto">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-bold text-center mb-16 tracking-tight"
+              >
+                {t.comparison.title}
+              </motion.h2>
+              <div className="grid gap-8 md:grid-cols-3">
+                {t.comparison.items.map((item, idx) => {
+                  const icons = [Brain, Lock, Zap];
+                  const Icon = icons[idx] || CheckCircle2;
+                  return (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: idx * 0.1 }}
+                      className="bg-secondary/30 p-8 rounded-2xl border border-border"
+                    >
+                      <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary mb-6">
+                        <Icon size={24} />
+                      </div>
+                      <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                      <p className="text-secondary-text leading-relaxed">
+                        {item.description}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Features List Section */}
-        <section className="py-16 lg:py-24 px-6">
+        <section className="py-16 lg:py-24 px-6 bg-secondary/10">
           <div className="max-w-6xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -197,6 +315,39 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        {t.faq && (
+          <section className="py-16 lg:py-24 px-6">
+            <div className="max-w-3xl mx-auto">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-bold text-center mb-12 tracking-tight"
+              >
+                {t.faq.title}
+              </motion.h2>
+              <div className="space-y-8">
+                {t.faq.items.map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.05 }}
+                    className="border-b border-border pb-6"
+                  >
+                    <h3 className="text-lg font-bold mb-2">{item.question}</h3>
+                    <p className="text-secondary-text leading-relaxed">
+                      {item.answer}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Footer */}
         <footer className="py-12 px-6 border-t border-border mt-12">

@@ -12,10 +12,10 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   metadataBase: new URL("https://getmacroloop.app"),
   title: {
-    default: "MacroLoop - The Fast AI Macro Tracker",
+    default: "MacroLoop - AI Calorie & Macro Tracker for iOS",
     template: "%s | MacroLoop",
   },
-  description: "Built for athletes who know what they’re doing. No meal plans. No coaching. Just lightning-fast logging.",
+  description: "MacroLoop is the fast AI calorie and macro tracker for iOS. Log food via photo, voice, or text and get instant nutrition estimates. Built for athletes.",
   keywords: ["macro tracker", "calorie counter", "AI food log", "nutrition tracker", "protein tracker", "iOS app", "MacroLoop"],
   authors: [{ name: "Marco Preuss" }],
   creator: "Marco Preuss",
