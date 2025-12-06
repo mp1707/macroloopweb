@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MacroLoop – Support & Legal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Support, privacy policy and legal information for MacroLoop iOS app."
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #f9f9f9;
+        color: #333;
+        font: 16px/1.6 system-ui;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .language-toggle {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #e5e5e5;
+      }
+
+      .language-toggle button {
+        padding: 8px 16px;
+        border: 2px solid #e5e5e5;
+        background: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font: 14px system-ui;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+
+      .language-toggle button.active {
+        background: #333;
+        color: white;
+        border-color: #333;
+      }
+
+      .language-toggle button:hover:not(.active) {
+        border-color: #333;
+      }
+
+      .language-content {
+        display: none;
+      }
+
+      .language-content.active {
+        display: block;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 1.1em;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      ul,
+      ol {
+        margin: 0.5em 0;
+        padding-left: 1.5em;
+      }
+
+      li {
+        margin: 0.3em 0;
+      }
+
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        margin: 2em 0;
+        border: none;
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .links {
+        display: grid;
+        gap: 12px;
+        margin: 1em 0;
+      }
+
+      .links a {
+        display: block;
+        padding: 12px 16px;
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.2s ease;
+      }
+
+      .links a:hover {
+        background: #e8e8e8;
+        border-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="language-toggle">
+        <button class="active" data-lang="en">English</button>
+        <button data-lang="de">Deutsch</button>
+      </div>
+
+      <!-- English Version -->
+      <div id="en-content" class="language-content active">
+        <h1>MacroLoop</h1>
+        <p>AI-first Food Logging – no account, no analytics, no tracking.</p>
+
+        <hr />
+
+        <h2>Terms of Service</h2>
+        <p><small>Effective: 12 November 2025</small></p>
+
+        <h3>Scope</h3>
+        <p>
+          These Terms govern your use of the iOS app "MacroLoop" (the "App")
+          provided by Marco Preuss – Sole Proprietor, Augustenburgstraße 8d,
+          76229 Karlsruhe, Germany (the "Provider"). Conflicting terms do not
+          apply.
+        </p>
+
+        <h3>Service Description</h3>
+        <p>
+          MacroLoop is an AI-assisted food logging app that provides estimated
+          nutrition values. Food logs are stored locally on your device. You may
+          optionally upload a photo for short-term processing to obtain a
+          nutrition estimate. See the Privacy Policy for details.
+        </p>
+
+        <h3>No Medical Advice</h3>
+        <p>
+          Nutrition outputs are estimates and do not constitute medical,
+          nutritional, or health advice. Consult qualified professionals for
+          health-related questions. You use the App at your own risk.
+        </p>
+
+        <h3>License and Use</h3>
+        <p>
+          We grant you a personal, revocable, non-transferable, non-exclusive
+          license to use the App in accordance with these Terms. You must not
+          copy, decompile, modify, rent, sell, or circumvent security or rate
+          limits.
+        </p>
+
+        <h3>User Content</h3>
+        <p>
+          You are responsible for any text or images you upload ("User
+          Content"). Do not upload content that is unlawful, infringes
+          third-party rights, or depicts identifiable persons. You grant the
+          Provider a limited, revocable license to process User Content solely
+          to provide the App's functionality (e.g., temporary storage,
+          transmission to the AI service). No further use will be made.
+        </p>
+
+        <h3>Prohibited Use</h3>
+        <p>
+          You must not: (a) misuse or bypass rate limits, (b) interfere with
+          security or availability, (c) submit unlawful, abusive,
+          discriminatory, or deceptive content, or (d) use automated access that
+          degrades the service.
+        </p>
+
+        <h3>Third-Party Services</h3>
+        <p>
+          The App relies on third-party services (including Supabase for
+          storage, OpenAI for image analysis, Upstash for rate limiting, and
+          Apple for in-app purchases). Their terms may apply in addition. The
+          Provider is not liable for outages or changes by those services to the
+          extent permitted by law.
+        </p>
+
+        <h3>Availability and Changes</h3>
+        <p>
+          We may change, limit, or discontinue features and provide updates.
+          There is no entitlement to specific availability or feature sets.
+        </p>
+
+        <h3>Subscriptions & Free Trial (MacroLoop Pro)</h3>
+        <ul>
+          <li>
+            <b>Free Trial:</b> You get a 7-day free trial. After the trial, it
+            automatically converts to a monthly subscription ("MacroLoop Pro")
+            unless you cancel at least 24 hours before the trial ends.
+          </li>
+          <li>
+            <b>Processing & Billing:</b> Purchases, management and billing are
+            handled exclusively by Apple (in-app purchases). The price shown on
+            the App Store applies; your Apple ID account is charged on
+            confirmation and on renewal within 24 hours before the period ends.
+          </li>
+          <li>
+            <b>Auto-Renewal:</b> The subscription renews monthly automatically
+            unless auto-renew is turned off.
+          </li>
+          <li>
+            <b>Cancellation/Management:</b> You can manage your subscription and
+            turn off auto-renew at any time in iOS Settings or the App Store
+            under "Subscriptions." We cannot cancel on your behalf.
+          </li>
+          <li>
+            <b>Trial per Apple ID:</b> The free trial is generally available
+            once per Apple ID (unless otherwise stated in the App Store).
+          </li>
+          <li>
+            <b>Changes to features/price:</b> Changes to features or price are
+            communicated by Apple under its rules. Where Apple requires your
+            consent, the subscription will not continue without it. Otherwise,
+            you can cancel before the next billing cycle.
+          </li>
+          <li>
+            <b>Term & Access:</b> If you cancel, access continues until the end
+            of the current paid period; no proration/refunds for partial
+            periods.
+          </li>
+          <li>
+            <b>Refunds:</b> Any refunds are handled by Apple under the Apple
+            Media Services Terms; please request via reportaproblem.apple.com.
+            We do not receive payment data and do not issue refunds ourselves.
+          </li>
+          <li>
+            <b>Restore:</b> You can restore purchases/subscriptions via Apple's
+            "Restore Purchases" (if offered) or your Subscriptions settings.
+          </li>
+        </ul>
+
+        <h3>Liability</h3>
+        <p>
+          We are liable without limitation for intent, gross negligence, and for
+          injury to life, body, or health. For simple negligence, liability
+          exists only for breaches of essential contractual duties and is
+          limited to typical, foreseeable damages. Mandatory liability under
+          product liability laws remains unaffected.
+        </p>
+
+        <h3>Term and Termination</h3>
+        <p>
+          You may stop using the App at any time by uninstalling it. We may
+          suspend or terminate access for cause, in particular for violations of
+          these Terms.
+        </p>
+
+        <h3>Privacy</h3>
+        <p>
+          Information on the processing of personal data (including short-term
+          image processing and IP address for rate limiting) is set out in the
+          Privacy Policy at
+          https://mp1707.github.io/macroloopinfo/privacy-policy.html.
+        </p>
+
+        <h3>Governing Law, Consumer Rights</h3>
+        <p>
+          German law applies, excluding the UN Sales Convention. Mandatory
+          consumer protection provisions of your habitual residence remain
+          unaffected. Venue, where permitted, is Karlsruhe, Germany.
+        </p>
+
+        <h3>Severability</h3>
+        <p>
+          If any provision is invalid, the remaining provisions remain in
+          effect.
+        </p>
+
+        <hr />
+
+        <h2>Contact</h2>
+        <p>
+          Marco Preuss – Sole Proprietor, Augustenburgstraße 8d, 76229
+          Karlsruhe, Germany<br />
+          Email: <a href="mailto:mpapps@web.de">mpapps@web.de</a>
+        </p>
+
+        <hr />
+
+        <div class="links">
+          <a href="./support.html">Support & Contact</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="./impressum.html">Legal Notice</a>
+        </div>
+      </div>
+
+      <!-- German Version -->
+      <div id="de-content" class="language-content">
+        <h1>MacroLoop</h1>
+        <p>
+          AI-first Food Logging – ohne Konto, keine Analytics, kein Tracking.
+        </p>
+
+        <hr />
+
+        <h2>Nutzungsbedingungen</h2>
+        <p><small>Stand: 12. November 2025</small></p>
+
+        <h3>Geltungsbereich</h3>
+        <p>
+          Diese Nutzungsbedingungen regeln die Nutzung der iOS-App „MacroLoop"
+          („App") von Marco Preuss – Einzelunternehmen, Augustenburgstraße 8d,
+          76229 Karlsruhe, Deutschland („Anbieter"). Abweichende Bedingungen
+          gelten nicht.
+        </p>
+
+        <h3>Leistungsbeschreibung</h3>
+        <p>
+          MacroLoop ist eine KI-gestützte App zum Erfassen von Lebensmitteln und
+          geschätzten Nährwerten. Food-Logs werden lokal auf deinem Gerät
+          gespeichert. Optional kannst du ein Foto hochladen, das kurzzeitig
+          verarbeitet wird, um eine Nährwertschätzung zu erhalten. Weitere
+          Informationen zur Datenverarbeitung findest du in der
+          Datenschutzerklärung.
+        </p>
+
+        <h3>Kein Ersatz für medizinischen Rat</h3>
+        <p>
+          Die angezeigten Nährwerte sind Schätzungen. Die App bietet keine
+          medizinische, ernährungsmedizinische oder sonstige
+          Gesundheitsberatung. Konsultiere bei gesundheitlichen Fragen
+          qualifiziertes Fachpersonal. Nutzung auf eigenes Risiko.
+        </p>
+
+        <h3>Lizenz und Nutzung</h3>
+        <p>
+          Du erhältst eine persönliche, widerrufliche, nicht übertragbare und
+          nicht ausschließliche Lizenz, die App gemäß diesen Bedingungen zu
+          nutzen. Es ist untersagt, die App zu kopieren, zu dekompilieren, zu
+          modifizieren, zu vermieten, zu verkaufen oder Sicherheitsmechanismen
+          bzw. Rate Limits zu umgehen.
+        </p>
+
+        <h3>Benutzerinhalte</h3>
+        <p>
+          Für Texte und Bilder, die du hochlädst („Benutzerinhalte"), trägst du
+          die Verantwortung. Lade keine Inhalte hoch, die Rechte Dritter
+          verletzen, rechtswidrig sind oder identifizierbare Personen zeigen. Du
+          räumst dem Anbieter eine auf die Funktionsbereitstellung beschränkte,
+          widerrufliche Lizenz ein, die Inhalte technisch zu verarbeiten (z. B.
+          kurzfristiges Speichern, Übermittlung an den KI-Dienst zur Analyse).
+          Eine weitergehende Nutzung findet nicht statt.
+        </p>
+
+        <h3>Unzulässige Nutzung</h3>
+        <p>
+          Untersagt sind insbesondere: (a) Missbrauch der App, z. B. Umgehung
+          von Rate Limits, (b) Eingriffe in IT-Sicherheit oder Verfügbarkeit,
+          (c) rechtswidrige, beleidigende, diskriminierende oder irreführende
+          Inhalte, (d) automatisierte Zugriffe, die den Betrieb beeinträchtigen.
+        </p>
+
+        <h3>Drittanbieter</h3>
+        <p>
+          Zur Bereitstellung einzelner Funktionen nutzt der Anbieter Dienste
+          Dritter (u. a. Supabase für Storage, OpenAI für Bildanalyse, Upstash
+          für Rate Limiting, Apple für In-App-Käufe). Für deren Leistungen
+          können ergänzend deren Bedingungen gelten. Der Anbieter haftet nicht
+          für Ausfälle oder Änderungen dieser Drittanbieter, soweit gesetzlich
+          zulässig.
+        </p>
+
+        <h3>Verfügbarkeit und Änderungen</h3>
+        <p>
+          Der Anbieter kann Funktionen ändern, einschränken oder einstellen und
+          Updates bereitstellen. Es besteht kein Anspruch auf eine bestimmte
+          Verfügbarkeit oder Funktionspalette.
+        </p>
+
+        <h3>Abonnement & Testphase (MacroLoop Pro)</h3>
+        <ul>
+          <li>
+            <b>Testphase:</b> Du erhältst eine 7-tägige kostenlose Testphase.
+            Nach Ablauf geht die Testphase automatisch in ein monatliches
+            Abonnement („MacroLoop Pro") über, sofern du nicht spätestens 24
+            Stunden vor Ende der Testphase kündigst.
+          </li>
+          <li>
+            <b>Abwicklung & Zahlung:</b> Kauf, Verwaltung und Abrechnung
+            erfolgen ausschließlich über Apple (In-App-Käufe). Der im App Store
+            angezeigte Preis gilt; die Belastung deines Apple-ID-Kontos erfolgt
+            bei Bestätigung sowie bei Verlängerung innerhalb von 24 Stunden vor
+            Periodenende.
+          </li>
+          <li>
+            <b>Automatische Verlängerung:</b> Das Abo verlängert sich monatlich
+            automatisch, solange die automatische Verlängerung nicht deaktiviert
+            ist.
+          </li>
+          <li>
+            <b>Kündigung/Verwaltung:</b> Du kannst das Abo jederzeit in den
+            iOS-Einstellungen bzw. im App Store unter „Abonnements" verwalten
+            und die automatische Verlängerung deaktivieren. Wir können keine
+            Kündigungen für dich durchführen.
+          </li>
+          <li>
+            <b>Testphase pro Apple-ID:</b> Die kostenlose Testphase steht in der
+            Regel einmal pro Apple-ID zur Verfügung (sofern im App Store nicht
+            anders angegeben).
+          </li>
+          <li>
+            <b>Leistungs-/Preisänderungen:</b> Änderungen von Funktionsumfang
+            oder Preis werden durch Apple gemäß den jeweiligen Regeln
+            mitgeteilt. Soweit Apple deine Zustimmung verlangt, wird das Abo
+            ohne Zustimmung nicht fortgeführt. Andernfalls kannst du vor dem
+            nächsten Abrechnungszeitraum kündigen.
+          </li>
+          <li>
+            <b>Laufzeit & Zugriff:</b> Bei Kündigung bleibt der Zugriff bis zum
+            Ende des bereits bezahlten Zeitraums bestehen; eine anteilige
+            Rückerstattung für laufende Perioden erfolgt nicht.
+          </li>
+          <li>
+            <b>Erstattungen:</b> Etwaige Erstattungen richtet Apple nach den
+            Apple Media Services-Bedingungen; Anfragen bitte direkt über
+            reportaproblem.apple.com. Wir erhalten keine Zahlungsdaten und
+            leisten selbst keine Erstattungen.
+          </li>
+          <li>
+            <b>Wiederherstellung:</b> Bereits getätigte Käufe/Abos kannst du
+            über „Käufe wiederherstellen" (falls angeboten) bzw. die
+            Abo-Einstellungen reaktivieren.
+          </li>
+        </ul>
+
+        <h3>Haftung</h3>
+        <p>
+          Der Anbieter haftet unbeschränkt bei Vorsatz, grober Fahrlässigkeit
+          sowie für Verletzungen von Leben, Körper oder Gesundheit. Bei
+          einfacher Fahrlässigkeit haftet der Anbieter nur bei Verletzung einer
+          wesentlichen Vertragspflicht (Kardinalpflicht) und der Höhe nach
+          begrenzt auf den bei Vertragsschluss vorhersehbaren, vertragstypischen
+          Schaden. Zwingende Haftung nach dem Produkthaftungsgesetz bleibt
+          unberührt.
+        </p>
+
+        <h3>Laufzeit und Kündigung</h3>
+        <p>
+          Du kannst die Nutzung jederzeit beenden, indem du die App
+          deinstallierst. Der Anbieter kann die Nutzung aus wichtigem Grund
+          sperren oder beenden, insbesondere bei Verstößen gegen diese
+          Bedingungen.
+        </p>
+
+        <h3>Datenschutz</h3>
+        <p>
+          Informationen zur Verarbeitung personenbezogener Daten (u. a.
+          kurzzeitige Bildverarbeitung, IP-Adresse für Rate Limiting) findest du
+          in der Datenschutzerklärung (Privacy Policy) unter
+          https://mp1707.github.io/macroloopinfo/privacy-policy.html.
+        </p>
+
+        <h3>Anwendbares Recht, Verbraucherrechte</h3>
+        <p>
+          Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Zwingende
+          Verbraucherschutzvorschriften deines gewöhnlichen Aufenthalts bleiben
+          unberührt. Gerichtsstand ist, soweit zulässig, Karlsruhe.
+        </p>
+
+        <h3>Salvatorische Klausel</h3>
+        <p>
+          Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit
+          der übrigen unberührt.
+        </p>
+
+        <hr />
+
+        <h2>Kontakt</h2>
+        <p>
+          Marco Preuss – Einzelunternehmen, Augustenburgstraße 8d, 76229
+          Karlsruhe, Deutschland<br />
+          E-Mail: <a href="mailto:mpapps@web.de">mpapps@web.de</a>
+        </p>
+
+        <hr />
+
+        <div class="links">
+          <a href="./support.html">Support & Kontakt</a>
+          <a href="./privacy-policy.html">Datenschutzerklärung</a>
+          <a href="./impressum.html">Impressum</a>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Language toggle functionality
+      const languageButtons = document.querySelectorAll(
+        ".language-toggle button"
+      );
+
+      languageButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const selectedLang = this.getAttribute("data-lang");
+
+          // Update active button
+          languageButtons.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+
+          // Update active content
+          document.querySelectorAll(".language-content").forEach((content) => {
+            content.classList.remove("active");
+          });
+          document
+            .getElementById(selectedLang + "-content")
+            .classList.add("active");
+
+          // Update page language attribute
+          document.documentElement.lang = selectedLang;
+
+          // Save preference to localStorage
+          localStorage.setItem("preferredLanguage", selectedLang);
+        });
+      });
+
+      // Restore user's language preference
+      const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+      if (savedLanguage !== "en") {
+        document.querySelector(`[data-lang="${savedLanguage}"]`).click();
+      }
+    </script>
+  </body>
+</html>
