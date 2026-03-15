@@ -46,7 +46,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
             gespeichert.
           </li>
           <li>
-            <b>Apple Health:</b> Du kannst optional Gewichtsdaten mit Apple Health synchronisieren (lesen/schreiben). Dieser Datenaustausch erfolgt <b>nur lokal</b>; Health-Daten werden <b>nicht</b> an unsere Server gesendet.
+            <b>Apple Health:</b> Du kannst optional Gewichtsdaten mit Apple
+            Health synchronisieren (lesen/schreiben). Dieser Datenaustausch
+            erfolgt <b>nur lokal</b>; Health-Daten werden <b>nicht</b> an unsere
+            Server gesendet.
           </li>
           <li>
             <b>Optionale Bild-Uploads:</b> Foto wird kurzzeitig in einem{" "}
@@ -74,7 +77,11 @@ export function PrivacyContent({ lang }: { lang: Language }) {
             Nährwerte). Diese Daten verlassen dein Gerät nicht.
           </li>
           <li>
-            <b>Apple Health (optional):</b> Wenn du die Verbindung aktivierst, liest und schreibt die App Gewichtsdaten in Apple Health. Die Datenverarbeitung erfolgt ausschließlich lokal auf dem Gerät. Wir übertragen keine Health-Daten auf externe Server und verwenden sie nicht für Werbung oder Analytics.
+            <b>Apple Health (optional):</b> Wenn du die Verbindung aktivierst,
+            liest und schreibt die App Gewichtsdaten in Apple Health. Die
+            Datenverarbeitung erfolgt ausschließlich lokal auf dem Gerät. Wir
+            übertragen keine Health-Daten auf externe Server und verwenden sie
+            nicht für Werbung oder Analytics.
           </li>
           <li>
             <b>Optionaler Bild-Upload (User Content):</b> kurzfristige
@@ -278,6 +285,8 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           Upstash — Managed Redis für kurzlebige Ratelimit-Zähler (eu-central-1,
           Frankfurt, AWS).
           <br />
+          PostHog — Produktanalytics & Crash-Reporting (EU).
+          <br />
           Vercel — Hosting & CDN (Global/USA); kann IP-Adressen aus
           Sicherheitsgründen protokollieren.
         </p>
@@ -322,7 +331,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           <b>Food logs</b> are stored <b>on device only</b>.
         </li>
         <li>
-          <b>Apple Health:</b> You can optionally sync weight data with Apple Health (read/write). This data exchange happens <b>locally only</b>; Health data is <b>never</b> sent to our servers.
+          <b>Apple Health:</b> You can optionally sync weight data with Apple
+          Health (read/write). This data exchange happens <b>locally only</b>;
+          Health data is <b>never</b> sent to our servers.
         </li>
         <li>
           <b>Optional photo upload:</b> image stored briefly in a <b>private</b>{" "}
@@ -348,7 +359,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           transmitted.
         </li>
         <li>
-          <b>Apple Health (optional):</b> If you enable the connection, the app reads and writes weight data to Apple Health. The data processing occurs locally on your device only. We do not transmit Health data to external servers, nor do we use it for advertising or analytics.
+          <b>Apple Health (optional):</b> If you enable the connection, the app
+          reads and writes weight data to Apple Health. The data processing
+          occurs locally on your device only. We do not transmit Health data to
+          external servers, nor do we use it for advertising or analytics.
         </li>
         <li>
           <b>Optional photo (User Content):</b> temporarily stored in Supabase (
@@ -518,6 +532,8 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         <br />
         Upstash — managed Redis for short-lived rate-limit counters
         (eu-central-1, Frankfurt, AWS).
+        <br />
+        PostHog — product analytics & crash reporting (EU).
         <br />
         Vercel — Hosting & CDN (Global/USA); may log IP addresses for security.
       </p>
