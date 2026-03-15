@@ -9,7 +9,7 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           Datenschutzerklärung
         </h1>
         <p>
-          <strong>Stand:</strong> 6. Dezember 2025
+          <strong>Stand:</strong> Februar 2026
         </p>
 
         <h2 className="text-xl font-bold text-foreground mt-8 mb-4">
@@ -36,7 +36,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         </h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>
-            <b>Kein Nutzerkonto, keine Analytics, kein Tracking.</b>
+            <b>
+              Kein Nutzerkonto, kein Tracking für Werbung.
+              Erste-Partei-Analytics zur App-Verbesserung werden genutzt.
+            </b>
           </li>
           <li>
             <b>Food-Logs</b> werden <b>ausschließlich auf deinem Gerät</b>{" "}
@@ -82,6 +85,13 @@ export function PrivacyContent({ lang }: { lang: Language }) {
             deinen In-App-Food-Logs.
           </li>
           <li>
+            <b>App-Nutzung & Analytics:</b> Standard-Geräteinformationen,
+            App-Lebenszyklus-Ereignisse und anonyme Interaktionsdaten zur
+            Produktverbesserung und Fehlerbehebung. Es werden keine Klarnamen
+            von Lebensmitteln, keine hochgeladenen Bilder und keine
+            personenbezogenen Daten (PII) an unsere Analytics-Server gesendet.
+          </li>
+          <li>
             <b>Support-Website:</b> Beim Aufruf unserer Webseiten (gehostet bei
             Vercel) kann der Hoster aus Sicherheitsgründen <i>IP-Adressen</i>{" "}
             und Zugriffslogs verarbeiten.
@@ -99,6 +109,11 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           <li>
             <b>IT-Sicherheit/Betrieb (Ratelimiting & Hosting-Logs):</b>{" "}
             berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).
+          </li>
+          <li>
+            <b>Produktverbesserung & Fehlerbehebung (Analytics):</b>{" "}
+            berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO), um die
+            App-Erfahrung zu optimieren und Abstürze zu beheben.
           </li>
         </ul>
 
@@ -149,6 +164,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
             Zähler (IP, Zeitstempel) zur Fair-Use/Abuse-Prevention.
           </li>
           <li>
+            <b>PostHog, Inc.</b> — Erste-Partei-Produktanalytics &
+            Crash-Reporting; Region: <b>EU (Frankfurt) / USA</b>.
+          </li>
+          <li>
             <b>Vercel Inc.</b> — Hosting & CDN für die Webseite. Region:
             Global/USA. Speichert Access-Logs (IPs) zu Sicherheitszwecken.
             (SCCs/DPF).
@@ -194,11 +213,12 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         </p>
 
         <h2 className="text-xl font-bold text-foreground mt-8 mb-4">
-          Kein Tracking / keine Werbung
+          Kein Tracking für Fremdwerbung
         </h2>
         <p>
-          Keine Werbe-SDKs, kein Profiling, kein Device-Fingerprinting, kein
-          Cross-App-Tracking (ATT).
+          Wir nutzen Analysedaten ausschließlich selbst (First-Party). Es gibt
+          keine Werbe-SDKs, kein Profiling für Dritte, kein
+          Device-Fingerprinting und kein Cross-App-Tracking (ATT).
         </p>
 
         <h2 className="text-xl font-bold text-foreground mt-8 mb-4">
@@ -265,7 +285,7 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         Privacy Policy
       </h1>
       <p>
-        <strong>Effective:</strong> December 6, 2025
+        <strong>Effective:</strong> February 2026
       </p>
 
       <h2 className="text-xl font-bold text-foreground mt-8 mb-4">
@@ -287,7 +307,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
       <h2 className="text-xl font-bold text-foreground mt-8 mb-4">Summary</h2>
       <ul className="list-disc pl-5 space-y-2">
         <li>
-          <b>No user accounts, no analytics, no tracking.</b>
+          <b>
+            No user accounts, no tracking for advertising. First-party analytics
+            are used for product improvement.
+          </b>
         </li>
         <li>
           <b>Food logs</b> are stored <b>on device only</b>.
@@ -328,6 +351,13 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           in-app food logs.
         </li>
         <li>
+          <b>App Usage & Analytics:</b> Standard device information, app
+          lifecycle events, and anonymous interaction data for product
+          improvement and debugging. No raw food names, uploaded images, or
+          personally identifiable information (PII) are sent to our analytics
+          servers.
+        </li>
+        <li>
           <b>Support website:</b> When visiting our websites (hosted by Vercel),
           the hoster may process <i>IP addresses</i> and access logs for
           security purposes.
@@ -345,6 +375,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         <li>
           <b>Security/operations (rate limiting & hosting logs):</b> legitimate
           interests (Art. 6(1)(f) GDPR).
+        </li>
+        <li>
+          <b>Product Analytics & Diagnostics:</b> legitimate interests (Art.
+          6(1)(f) GDPR) to optimize the app experience and fix crashes.
         </li>
       </ul>
 
@@ -393,6 +427,10 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           timestamp) only for abuse/fair-use protection.
         </li>
         <li>
+          <b>PostHog, Inc.</b> — first-party product analytics & crash
+          reporting; region: <b>EU (Frankfurt) / US</b>.
+        </li>
+        <li>
           <b>Vercel Inc.</b> — Hosting & CDN for the website. Region:
           Global/USA. Stores access logs (IPs) for security purposes.
           (SCCs/DPF).
@@ -436,8 +474,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         No tracking/ads
       </h2>
       <p>
-        No ad SDKs, profiling, device fingerprinting, or cross-app tracking
-        (ATT).
+        We use analytics data exclusively for ourselves (first-party). There are
+        no ad SDKs, no third-party profiling, no device fingerprinting, and no
+        cross-app tracking (ATT).
       </p>
 
       <h2 className="text-xl font-bold text-foreground mt-8 mb-4">
