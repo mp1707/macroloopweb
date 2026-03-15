@@ -29,9 +29,9 @@ export function TermsContent({ lang }: { lang: Language }) {
           MacroLoop ist eine KI-gestützte App zum Erfassen von Lebensmitteln und
           geschätzten Nährwerten. Food-Logs werden lokal auf deinem Gerät
           gespeichert. Optional kannst du ein Foto hochladen, das kurzzeitig
-          verarbeitet wird, um eine Nährwertschätzung zu erhalten. Weitere
-          Informationen zur Datenverarbeitung findest du in der
-          Datenschutzerklärung.
+          verarbeitet wird, um eine Nährwertschätzung zu erhalten, sowie dein
+          Gewicht mit Apple Health synchronisieren. Weitere Informationen zur
+          Datenverarbeitung findest du in der Datenschutzerklärung.
         </p>
 
         <h3 className="text-lg font-bold text-foreground mt-6 mb-2">
@@ -233,7 +233,8 @@ export function TermsContent({ lang }: { lang: Language }) {
         MacroLoop is an AI-assisted food logging app that provides estimated
         nutrition values. Food logs are stored locally on your device. You may
         optionally upload a photo for short-term processing to obtain a
-        nutrition estimate. See the Privacy Policy for details.
+        nutrition estimate, and sync your weight data with Apple Health. See the
+        Privacy Policy for details.
       </p>
 
       <h3 className="text-lg font-bold text-foreground mt-6 mb-2">

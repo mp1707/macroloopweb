@@ -46,6 +46,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
             gespeichert.
           </li>
           <li>
+            <b>Apple Health:</b> Du kannst optional Gewichtsdaten mit Apple Health synchronisieren (lesen/schreiben). Dieser Datenaustausch erfolgt <b>nur lokal</b>; Health-Daten werden <b>nicht</b> an unsere Server gesendet.
+          </li>
+          <li>
             <b>Optionale Bild-Uploads:</b> Foto wird kurzzeitig in einem{" "}
             <b>privaten</b> Supabase-Bucket in <b>eu-central-1 (Frankfurt)</b>{" "}
             gespeichert; eine Edge Function erzeugt eine{" "}
@@ -69,6 +72,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           <li>
             <b>Auf dem Gerät (on-device):</b> deine Food-Logs (Texte, Mengen,
             Nährwerte). Diese Daten verlassen dein Gerät nicht.
+          </li>
+          <li>
+            <b>Apple Health (optional):</b> Wenn du die Verbindung aktivierst, liest und schreibt die App Gewichtsdaten in Apple Health. Die Datenverarbeitung erfolgt ausschließlich lokal auf dem Gerät. Wir übertragen keine Health-Daten auf externe Server und verwenden sie nicht für Werbung oder Analytics.
           </li>
           <li>
             <b>Optionaler Bild-Upload (User Content):</b> kurzfristige
@@ -316,6 +322,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
           <b>Food logs</b> are stored <b>on device only</b>.
         </li>
         <li>
+          <b>Apple Health:</b> You can optionally sync weight data with Apple Health (read/write). This data exchange happens <b>locally only</b>; Health data is <b>never</b> sent to our servers.
+        </li>
+        <li>
           <b>Optional photo upload:</b> image stored briefly in a <b>private</b>{" "}
           Supabase bucket in <b>eu-central-1 (Frankfurt)</b>; an Edge Function
           creates a <b>short-lived signed URL</b> and sends it to OpenAI for
@@ -337,6 +346,9 @@ export function PrivacyContent({ lang }: { lang: Language }) {
         <li>
           <b>On device:</b> your food logs (text, amounts, nutrition). Not
           transmitted.
+        </li>
+        <li>
+          <b>Apple Health (optional):</b> If you enable the connection, the app reads and writes weight data to Apple Health. The data processing occurs locally on your device only. We do not transmit Health data to external servers, nor do we use it for advertising or analytics.
         </li>
         <li>
           <b>Optional photo (User Content):</b> temporarily stored in Supabase (
